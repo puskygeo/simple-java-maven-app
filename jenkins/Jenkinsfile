@@ -10,6 +10,11 @@ pipeline {
             steps {
                 sh 'mvn test'
             }
-        }              
+        }
+        stage('Finalizare') {
+            steps {
+                echo "Acest branch este pentru finalizare"
+            }
+        }  
     }
 }
